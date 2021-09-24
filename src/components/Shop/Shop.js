@@ -7,6 +7,14 @@ const Shop = () => {
 
     const [products, setProducts] = useState([]);
 
+    const [cart, setCart] = useState([]);
+
+    const handleAddCart = (product) => {
+
+        const newCart = [...cart, product];
+        setCart(newCart);
+    }
+
     useEffect(() => {
 
         fetch('./products.JSON')
@@ -20,12 +28,12 @@ const Shop = () => {
                 {
                     products.map(product => {
 
-                        return <Product key={product.key} data={product}></Product>
+                        return <Product key={product.key} data={product} eventHandler={handleAddCart}></Product>
                     })
                 }
             </div>
-            <div className="cart-info">
-                <Cart></Cart>
+            <div className="cart">
+                <Cart cart={cart} ></Cart>
             </div>
         </div>
     );

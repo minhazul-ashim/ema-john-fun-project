@@ -3,3 +3,12 @@
     display: flex;
     justify-content: space-between;
 }
+.costs {
+
+    text-align: right;
+}
+
+.cart-info {
+
+    position: fixed;
+}

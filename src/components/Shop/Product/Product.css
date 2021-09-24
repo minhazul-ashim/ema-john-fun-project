@@ -15,3 +15,14 @@
 
     padding: 0 5%;
 }
+
+.product-details button {
+
+    border: none;
+    padding: 2% 5%;
+    background-color: rgba(0, 255, 0, 0.493);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    box-shadow: 5px 5px 10px rgb(206, 201, 201);
+    cursor: pointer;
+}
