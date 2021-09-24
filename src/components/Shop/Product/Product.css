@@ -2,4 +2,16 @@
 
     display: grid;
     grid-template-columns: 1fr 2fr;
+    padding: 2%;
+    border-bottom: 1px solid rgb(226, 220, 220);
+}
+
+.product-details h3 {
+
+    font-weight: 500;
+}
+
+.product-details {
+
+    padding: 0 5%;
 }
